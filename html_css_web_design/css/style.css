@@ -14,6 +14,7 @@ a {
 }
 img {
   max-width: 100%;
+  display: inline;
 }
 
 /* header */
@@ -31,7 +32,7 @@ img {
   padding: 0 4%;
 }
 
-.main-nav {
+ul.main-nav {
   display: flex;
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -46,4 +47,45 @@ img {
 }
 .main-nav a:hover {
   color: #0bd;
+}
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;;
+}
+.page-title {
+  font-size: 5rem;
+  font-family: 'Philosopher', serif;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.button {
+  font-size: 1.375rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.button:hover {
+  background: #0090aa;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(../images/main-bg.jpg);
+  min-height: 100vh;
+}
+
+#home .page-title {
+  text-transform: none;
 }
