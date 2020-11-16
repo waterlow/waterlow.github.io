@@ -213,6 +213,43 @@ ul.sub-menu {
   color: #0bd;
 }
 
+#menu {
+  background-image: url(../images/menu-bg.jpg);
+  min-height: 100vh;
+}
+
+.menu-content {
+  max-width: 560px;
+  margin-top: 10%;
+}
+
+.menu-content .page-title {
+  text-align: center;
+}
+
+.menu-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+}
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.big-box {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.big-box img {
+  height: 94%;
+  width: 100%;
+}
+
 @media (max-width: 600px) {
   .page-header {
     flex-direction: column;
@@ -268,6 +305,19 @@ ul.sub-menu {
   .post-title,
   .post-cat {
     margin-left: 80px;
+  }
+
+  .menu-content {
+    margin-top: 20%;
+  }
+
+  .big-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .big-box img {
+    height: 100%;
   }
 
 }
