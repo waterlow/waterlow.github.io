@@ -1,5 +1,17 @@
 @charset "utf-8";
 
+button, input, select, textarea {
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+}
+button, input, optgroup, select, textarea {
+  font: inherit;
+}
+input {
+  border-radius: 0;
+}
+
 /* common */
 html {
   font-size: 100%;
@@ -255,6 +267,39 @@ ul.sub-menu {
   min-height: 100vh;
 }
 
+form div {
+  margin-bottom: 14px;
+}
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, .5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
 @media (max-width: 600px) {
   .page-header {
     flex-direction: column;
@@ -324,5 +369,17 @@ ul.sub-menu {
   .big-box img {
     height: 100%;
   }
+
+  #contact .page-title {
+    margin-top: 40px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    max-width: 100%;
+  }
+
+
 
 }
