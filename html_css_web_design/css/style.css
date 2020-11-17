@@ -250,6 +250,11 @@ ul.sub-menu {
   width: 100%;
 }
 
+#contact {
+  background-image: url(../images/contact-bg.jpg);
+  min-height: 100vh;
+}
+
 @media (max-width: 600px) {
   .page-header {
     flex-direction: column;
