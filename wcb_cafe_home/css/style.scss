@@ -18,14 +18,6 @@ img {
   max-width: 100%;
 }
 
-.home-image {
-  background-image: url(../images/main-bg.jpg);
-  min-height: 100vh;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -45,13 +37,25 @@ img {
   }
 
   .nav-item {
-    margin-left: 36px
+    margin-left: 36px;
   }
 
   .nav-link {
     color: #432;
-    font-size: 1.25rem
+    font-size: 1.25rem;
+
+    &:hover {
+      color: #0bd;
+    }
   }
+}
+
+.home-hero {
+  background-image: url('../images/main-bg.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .home-content {
@@ -62,9 +66,9 @@ img {
   margin-top: 10%;
 
   .title {
-    font-size: 5.0rem;
-    font-family: "Philosopher", serif;
+    font-family: 'Philosopher', sans-serif;
     font-weight: normal;
+    font-size: 5.0rem;
   }
 
   .subtitle {
@@ -73,17 +77,15 @@ img {
   }
 
   .button {
-    display: block;
-    background: #00bbdd;
-    font-size: 1.375rem;
-    margin: 31px auto;
-    padding: 10px 32px;
-    width: 218px;
-    border-radius: 5px;
+    display: inline-block;
     color: #fff;
-
+    font-size: 1.375rem;
+    background-color: #0bd;
+    border-radius: 5px;
+    margin: 31px 0;
+    padding: 11px 32px;
     &:hover {
-      background: #0090aa;
+      background-color: #0090aa;
     }
   }
 }
