@@ -18,10 +18,18 @@ img {
   max-width: 100%;
 }
 
-.header {
+.home-hero {
+  background-image: url('../images/main-bg.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home-header {
   display: flex;
   justify-content: space-between;
-  max-width: 1100px;
+  width: 1100px;
   margin: 0 auto;
   padding: 0 4%;
 
@@ -32,60 +40,48 @@ img {
   }
 
   .nav-list {
-    display: flex;
     margin-top: 34px;
+    display: flex;
   }
 
   .nav-item {
     margin-left: 36px;
   }
-
   .nav-link {
-    color: #432;
     font-size: 1.25rem;
-
+    color: #432;
     &:hover {
       color: #0bd;
     }
   }
 }
 
-.home-hero {
-  background-image: url('../images/main-bg.jpg');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
-
 .home-content {
-  max-width: 1100px;
+  width: 1100px;
   margin: 0 auto;
   padding: 0 4%;
   text-align: center;
   margin-top: 10%;
 
   .title {
-    font-family: 'Philosopher', sans-serif;
+    font-family: "Philosopher", sans-serif;
     font-weight: normal;
     font-size: 5.0rem;
   }
 
   .subtitle {
     margin-top: 10px;
+    margin-bottom: 20px;
     font-size: 1.125rem;
   }
 
   .button {
     display: inline-block;
+    background: #0bd;
     color: #fff;
-    font-size: 1.375rem;
-    background-color: #0bd;
+    padding: 11px 32px 10px;
+    margin: 11px 31px;
     border-radius: 5px;
-    margin: 31px 0;
-    padding: 11px 32px;
-    &:hover {
-      background-color: #0090aa;
-    }
+    font-size: 1.375rem;
   }
 }
