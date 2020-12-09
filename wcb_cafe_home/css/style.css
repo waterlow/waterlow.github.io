@@ -113,7 +113,7 @@ img {
   margin-bottom: 40px;
 }
 
-.news-page-title {
+.hero.news-hero .title {
   text-align: center;
   font-family: "Philosopher", sans-serif;
   font-weight: normal;
@@ -241,6 +241,46 @@ img {
   }
   .header .nav-link {
     font-size: 1rem;
+  }
+  .hero.news-hero .title {
+    margin-top: 30px;
+    font-size: 2.5rem;
+  }
+  .news-contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-contents .article,
+  .news-contents .sidebar {
+    width: 100%;
+  }
+  .news-contents .sidebar {
+    margin-top: 60px;
+  }
+  .news-contents .post-info {
+    margin-bottom: 30px;
+  }
+  .news-contents .post-date {
+    width: 70px;
+    height: 70px;
+    font-size: 1rem;
+  }
+  .news-contents .post-date .post-year {
+    font-size: 0.875rem;
+    padding-top: 2px;
+  }
+  .news-contents .post-title,
+  .news-contents .post-category {
+    margin-left: 80px;
+  }
+  .news-contents .post-title {
+    font-size: 1.375rem;
+  }
+  .news-contents .post-category {
+    font-size: 0.875rem;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

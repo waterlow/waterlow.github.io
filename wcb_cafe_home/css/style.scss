@@ -105,14 +105,16 @@ img {
   background-image: url(../images/news-bg.jpg);
   height: 270px;
   margin-bottom: 40px;
+
+  .title {
+    text-align: center;
+    font-family: "Philosopher", sans-serif;
+    font-weight: normal;
+    font-size: 5.0rem;
+  }
 }
 
-.news-page-title {
-  text-align: center;
-  font-family: "Philosopher", sans-serif;
-  font-weight: normal;
-  font-size: 5.0rem;
-}
+
 
 .news-contents {
   max-width: 1100px;
@@ -229,6 +231,55 @@ img {
 
     .nav-link {
       font-size: 1rem;
+    }
+  }
+
+  .hero.news-hero {
+    .title {
+      margin-top: 30px;
+      font-size: 2.5rem;
+    }
+  }
+
+  .news-contents {
+    flex-direction: column;
+
+    .article,
+    .sidebar {
+      width: 100%;
+    }
+
+    .sidebar {
+      margin-top: 60px;
+    }
+
+    .post-info {
+      margin-bottom: 30px;
+    }
+
+    .post-date {
+      width: 70px;
+      height: 70px;
+      font-size: 1rem;
+
+      .post-year {
+        font-size: 0.875rem;
+        padding-top: 2px;
+      }
+    }
+
+    .post-title,
+    .post-category {
+      margin-left: 80px;
+    }
+
+    .post-title {
+      font-size: 1.375rem;
+    }
+
+    .post-category {
+      font-size: 0.875rem;
+      margin-top: 10px;
     }
   }
 }
