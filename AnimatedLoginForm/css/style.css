@@ -1,0 +1,70 @@
+/* common */
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+}
+
+.box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #191919;
+  text-align: center;
+}
+
+.box .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box .name, .box .password {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  padding: 14px 10px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.box .name:focus, .box .password:focus {
+  width: 280px;
+  border-color: #2cee71;
+}
+
+.box .submit {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2cee71;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  padding: 14px 40px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.box .submit:hover {
+  background: #2cee71;
+}
+/*# sourceMappingURL=style.css.map */
