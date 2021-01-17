@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* common */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  height: 100%;
+}
+img {
+  max-width: 100%;
+}
+
+.title {
+  height: 50px;
+  position: fixed;
+}
+
+.wrap {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.box {
+  border: 3px solid red;
+}
+
+footer {
+  border: 3px solid green;
+  flex: 1 1 100%;
+}
