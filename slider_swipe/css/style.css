@@ -26,6 +26,8 @@ img {
   display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 
 .slide {
@@ -34,5 +36,9 @@ img {
       flex-shrink: 0;
   height: 100%;
   background: blue;
+}
+
+.slides > div {
+  scroll-snap-align: start;
 }
 /*# sourceMappingURL=style.css.map */
