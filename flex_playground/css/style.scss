@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* common */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+
+  .item {
+    flex-basis: 100%;
+    background: gray;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .item2 {
+    flex-basis: 33.3%;
+    background: gray;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .item3 {
+    flex-grow: 1;
+    flex-basis: 33.3%;
+    background: gray;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .item4 {
+    flex-grow: 1;
+    flex-basis: 33.3%;
+    background: gray;
+    text-align: center;
+    border: 1px solid black;
+  }
+}
