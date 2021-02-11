@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.slider {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  overflow: hidden;
+  z-index: 1;
+}
+
+#items {
+  width: 10000px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#items.shifting {
+  transition: left .2s ease-out;
+}
+
+.slide {
+  width: 400px;
+  height: 300px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+
+.slider .slide:nth-child(1) {
+  background: #FFCF47;
+}
+
+.slider .slide:nth-child(2) {
+  background: #F97C68;
+}
+
+.slider .slide:nth-child(3) {
+  background: #a78df5;
+}
+
+.slider .slide:nth-child(4) {
+  background: #ff8686;
+}
+
+.slider .slide:nth-child(5) {
+  background: #7ADCEF;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 20px;
+  margin-top: -20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.prev,
+.next {
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.prev {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
+  left: -20px;
+}
+
+.next {
+  background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
+  right: -20px;
+}
+
+.prev:active,
+.next:active {
+  transform: scale(0.8);
+}
