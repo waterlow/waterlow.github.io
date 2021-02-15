@@ -1,0 +1,39 @@
+/* common */
+html {
+  font-size: 100%;
+}
+
+.overflow-hidden-wrapper {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 100px auto;
+}
+
+.overflow-hidden {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+  overflow: hidden;
+  border: 3px solid black;
+}
+
+.overflow-hidden .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overflow-hidden .inner-1 {
+  width: 400px;
+  height: 300px;
+  background: gray;
+}
+
+.overflow-hidden .inner-2 {
+  width: 400px;
+  height: 300px;
+  background: green;
+}
+/*# sourceMappingURL=style.css.map */
