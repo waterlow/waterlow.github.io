@@ -2,30 +2,22 @@
   var items = document.querySelector('.items');
   var slideSize = document.querySelector('.slide').offsetWidth;
   var index = 0;
-  var allowShift = true; // Click events
 
   document.querySelector('.prev').addEventListener('click', function () {
-    shiftSlide(-1);
+    if (index !== 0) shiftSlide(-1);
   });
   document.querySelector('.next').addEventListener('click', function () {
-    shiftSlide(1);
-  }); // Transition events
-
-  items.addEventListener('transitionend', checkIndex);
+    if (index !== 4) shiftSlide(1);
+  });
+  items.addEventListener('transitionend', function () {
+    items.classList.remove('shifting');
+  });
 
   function shiftSlide(dir) {
-    if (!allowShift) return;
-    if (dir === 1 && index === 4 || dir === -1 && index === 0) return;
+    if (document.querySelector('.shifting')) return;
 
     items.classList.add('shifting');
-    var posInitial = items.offsetLeft;
-    items.style.left = posInitial - slideSize * dir + "px";
     index = index + dir;
-    allowShift = false;
-  }
-
-  function checkIndex() {
-    items.classList.remove('shifting');
-    allowShift = true;
+    items.style.left = - slideSize * index + 'px';
   }
 })();
