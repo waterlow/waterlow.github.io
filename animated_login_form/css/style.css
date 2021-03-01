@@ -9,18 +9,18 @@
 .form-wrapper {
   height: 100vh;
   background-image: linear-gradient(120deg, #3498db, #8e44ad);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .login-form {
   width: 360px;
+  background: #f1f1f1;
   height: 580px;
   padding: 80px 40px;
   border-radius: 10px;
-  background: #f1f1f1;
-
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .login-form h1 {
@@ -53,8 +53,8 @@
   left: 5px;
   color: #adadad;
   transform: translateY(-50%);
+  z-index: -1;
   transition: .5s;
-  z-index: 1;
 }
 
 .text-input span::after {
