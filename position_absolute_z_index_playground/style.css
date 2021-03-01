@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+}
+
+.login-form{
+  background: #f1f1f1;
+  transform: translate(0,0);
+}
+
+.input{
+  position: relative;
+  background: none;
+}
+
+span::before{
+  content: 'hello';
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
