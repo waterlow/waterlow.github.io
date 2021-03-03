@@ -7,6 +7,9 @@
 }
 
 .form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-image: linear-gradient(120deg, #3498db, #8e44ad);
 }
@@ -17,10 +20,7 @@
   height: 580px;
   padding: 80px 40px;
   border-radius: 10px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  z-index: 1;
 }
 
 .login-form h1 {
@@ -53,8 +53,8 @@
   left: 5px;
   color: #adadad;
   transform: translateY(-50%);
-  z-index: -1;
   transition: .5s;
+  z-index: -1;
 }
 
 .text-input span::after {
