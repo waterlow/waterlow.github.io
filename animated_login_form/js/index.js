@@ -1,11 +1,12 @@
-(() => {
-  document.querySelector('.text-input input').addEventListener('focus', (event) => {
-    event.target.classList.add('focus')
-  })
+(function () {
+  Array.from(document.querySelectorAll('.text-input input')).forEach(function (element) {
+    element.addEventListener('focus', function (event) {
+      event.target.classList.add('focus');
+    });
+    element.addEventListener('blur', function (event) {
+      if (event.target.value !== '') return;
 
-  document.querySelector('.text-input input').addEventListener('blur', (event) => {
-    if(event.target.value === '') {
-      event.target.classList.remove('focus')
-    }
-  })
-})()
+      event.target.classList.remove('focus');
+    });
+  });
+})();
