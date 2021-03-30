@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* common */
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.items {
+  width: 488px;
+  padding: 16px;
+  background: #F0F3F5;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  list-style: none;
+  flex: 1 1 auto;
+}
+
+.item-content {
+  display: flex;
+  text-decoration: none;
+}
+
+.info {
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 12px;
+  color: #0E202E;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.company {
+  font-size: 10px;
+  color: #8C8C8C;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.image {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #E0E0E0;
+}
