@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.fixed {
+  position: fixed;
+  background: red;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  bottom: 0;
+}
+
+.container {
+  z-index: auto;
+  background: blue;
+  width: 500px;
+  height: 500px;
+}
+
+.position-relative {
+  z-index: auto;
+  position: relative;
+  background: green;
+  width: 200px;
+  height: 200px;
+}
+
+.position-absolute {
+  z-index: auto;
+  position: absolute;
+  background: gray;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+}
