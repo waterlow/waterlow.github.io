@@ -3,5 +3,6 @@
     this.classList.toggle('active');
     document.querySelector(".navigation-menu").classList.toggle('active');
     document.querySelector(".menu-icon i").classList.toggle('fa-times');
+    document.querySelector(".container").classList.toggle('active');
   })
 })()
