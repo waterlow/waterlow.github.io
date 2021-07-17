@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.navigation-menu{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  top: 0;
+  right: -100%;
+  text-align: center;
+  font-size: 30px;
+  transition: .6s;
+  overflow-y: scroll;
+}
+
+.nav {
+  overflow: scroll;
+}
+
+/* .navigation-menu.active{
+  right: 0;
+} */
+
+.menu-icon{
+  position: relative;
+  z-index: 1;
+}
+
+body.show-menu {
+  overflow-y: hidden;
+}
+
+body.show-menu .navigation-menu {
+  right: 0;
+}
