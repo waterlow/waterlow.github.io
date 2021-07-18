@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Ubuntu",sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(../images/3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.side-menu {
+  position: fixed;
+  top: 50%;
+  right: -200px;
+  width: 200px;
+  background-color: #f1f1f1;
+  transition: .4s linear;
+}
+
+.side-menu.active {
+  right: 0;
+}
+
+.side-menu.active .open-arrow {
+  display: none;
+}
+
+.close-arrow {
+  display: none;
+}
+
+.side-menu.active .close-arrow {
+  display: inline;
+}
+
+
+.side-menu-link {
+  display: block;
+  padding: 14px 10px;
+  color: #333;
+  font-size: 20px;
+  transition: .4s linear;
+}
+
+.side-menu-link:hover {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+.side-menu-link-icon {
+  width: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.toggle-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -40px;
+  top: 0;
+  width: 40px;
+  height: 60px;
+  background: #333;
+  color: #f1f1f1;
+  font-size: 20px;
+  cursor: pointer;
+}
