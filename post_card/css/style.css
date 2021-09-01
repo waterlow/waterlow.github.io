@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Ubuntu",sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.card {
+  position: relative;
+  width: 360px;
+  height: 400px;
+  background: #fff;
+  box-shadow: 15px 15px 60px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.card .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .top .user-detail {
+  display: flex;
+  align-items: center;
+}
+
+.card .top .user-detail .profile-image {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 8px;
+}
