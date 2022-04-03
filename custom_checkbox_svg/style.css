@@ -1,0 +1,33 @@
+body {
+  padding: 2rem;
+  font: 1.5rem/1.6 sans-serif;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+/* Hide Default Checkbox */
+input[type="checkbox"] {
+  opacity: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+/* Create a Box */
+input[type="checkbox"]+span::before {
+  display: inline-block;
+  content: '';
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: .5rem;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M16%202V16H2V2H16ZM16%200H2C0.9%200%200%200.9%200%202V16C0%2017.1%200.9%2018%202%2018H16C17.1%2018%2018%2017.1%2018%2016V2C18%200.9%2017.1%200%2016%200Z%22%20fill%3D%22%23C0C0C0%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Checked Style */
+input[type="checkbox"]:checked+span::before {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M16%200H2C0.89%200%200%200.9%200%202V16C0%2017.1%200.89%2018%202%2018H16C17.11%2018%2018%2017.1%2018%2016V2C18%200.9%2017.11%200%2016%200ZM7%2014L2%209L3.41%207.59L7%2011.17L14.59%203.58L16%205L7%2014Z%22%20fill%3D%22%232BA9D1%22%2F%3E%3C%2Fsvg%3E');
+}
