@@ -1,0 +1,33 @@
+.container {
+  width: 375px;
+  margin: 0 auto;
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.tag {
+  background:gray;
+  height: 20px;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+
+.tag:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.tag2 {
+  display: inline-block;
+  background:gray;
+  height: 30px;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.close-button {
+  float: right;
+  height: 30px;
+}
