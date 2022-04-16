@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>JS Test</title>
+  <script>
+    window.addEventListener('load', (event) => {
+
+      document.getElementById('button1').addEventListener('click', () => {
+
+        // content3の表示位置を取得
+        var content3 = document.getElementById('content3');
+        var content_position = content3.getBoundingClientRect();
+
+        // content3へ移動
+        window.scrollTo(0, content_position.top);
+
+      });
+    });
+  </script>
+  <style>
+    #content1,
+    #content2,
+    #content3 {
+      height: 300px;
+      background-color: #ccc;
+    }
+
+    #content2 {
+      background-color: #ddd;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>JS Test</h1>
+  <button id="button1">コンテンツ3へ移動</button>
+  <div id="content1">コンテンツ1</div>
+  <div id="content2">コンテンツ2</div>
+  <div id="content3">コンテンツ3</div>
+</body>
+
+</html>
