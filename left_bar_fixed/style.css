@@ -1,0 +1,33 @@
+.container {
+  width: 375px;
+}
+
+.header {
+  height: 35px;
+  background-color: #7f8c8d;
+}
+
+.main {
+  height: calc(100vh - 35px);
+  overflow-y: scroll;
+}
+
+.head {
+  height: 35px;
+  background-color: #bdc3c7;
+}
+
+.table {
+  display: flex;
+}
+
+.sidebar {
+  font-size: 3rem;
+  width: 25%;
+  background-color: #8e44ad;
+}
+
+.columns {
+  width: 75%;
+  overflow-x: scroll;
+}
