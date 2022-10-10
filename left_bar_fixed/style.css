@@ -28,6 +28,13 @@
 }
 
 .columns {
+  display: flex;
   width: 75%;
   overflow-x: scroll;
+}
+
+.column {
+  width: 100px;
+  height: 50px;
+  border: 1px solid black;
 }
